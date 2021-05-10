@@ -45,6 +45,7 @@ export const WinnersList = (props: any) => {
 
     return (
         <table className="card">
+            <tbody>
             <tr className="overview-table">
                 <th className="table-item">Athlete</th>
                 <th className="table-item">Sport</th>
@@ -69,6 +70,7 @@ export const WinnersList = (props: any) => {
                     })
                 })
             }
+            </tbody>
         </table>
     );
 }
