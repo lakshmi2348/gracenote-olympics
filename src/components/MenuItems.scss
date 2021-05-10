@@ -1,0 +1,27 @@
+.menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0 auto;
+    height: 70px;
+    border-bottom: 1px solid #ccc;
+}
+
+.menu-list {
+    margin-right: 30px;
+}
+
+a {
+   text-decoration: none;
+}
+a:link, a:visited {
+    color: #040404;
+}
+a:hover {
+    color: #0099cc;
+}
+.active {
+    padding-bottom: 0.25em;
+    border-bottom: 4px solid #0099cc;
+}

@@ -1,0 +1,13 @@
+@import './scssutils.scss';
+
+.overview-table {
+    @include overview-table;
+}
+
+.table-item {
+    @include table-item;
+}
+
+.card {
+    @include card;
+}

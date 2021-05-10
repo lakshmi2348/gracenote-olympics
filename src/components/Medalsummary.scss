@@ -1,0 +1,18 @@
+@import './scssutils.scss';
+
+.flaglogo {
+    max-width: 100px;
+}
+
+.overview-table {
+    @include overview-table;
+}
+
+.table-item {
+    @include table-item;
+}
+
+.card {
+    @include card;
+}
+

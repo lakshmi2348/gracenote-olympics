@@ -1,0 +1,17 @@
+.overview {
+    padding: 30px;
+}
+
+.title {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+}
+.title-logo {
+    max-width: 150px;
+    max-height: 75px;
+    margin: 0 20px 0 0;
+}
+
+.title-header {
+    font-weight: 200;
+}

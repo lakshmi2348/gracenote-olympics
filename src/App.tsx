@@ -1,25 +1,32 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import { Header } from './components/Header';
+import { Overview } from './components/Overview';
+import { BrowserRouter as Router } from 'react-router-dom'
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [medalTable, setMedalTable] = useState();
+
+    useEffect(() => {
+        fetch('/api/getMedalTable')
+            .then(response => response.json())
+            .then((data) => {
+                setMedalTable(data);
+                console.log(medalTable);
+            }).catch(error => {
+                console.log("error", error);
+            });    
+    }, []);
+    
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+      <div className='App'>
+        <Header></Header>
+        <Overview medalTable={medalTable}></Overview>
     </div>
+    </Router>
+    
   );
 }
 

@@ -10,14 +10,23 @@
     "@types/node": "^12.0.0",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
+    "@types/react-router-dom": "5.1.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-router-dom": "5.2.0",
     "typescript": "^4.1.2",
-    "web-vitals": "^1.0.1"
+    "web-vitals": "^1.0.1",
+    "wiremock-standalone": "~2.27.2-1",
+    "concurrently": "6.0.2",
+    "json-server ": "0.16.3",
+    "node-sass": "4.14.1"
   },
+  "proxy": "http://localhost:8080",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "concurrently \"json-server -p 8080 --watch src/mocks/* --routes src/mocks/routes.json\" \"react-scripts start\"",
+    "start:mock": "json-server --watch src/mocks/* --routes src/mocks/routes.json",
+    "start:old": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

@@ -1,0 +1,13 @@
+@mixin overview-table {
+    height: 100px;
+}
+
+@mixin table-item {
+    display: table-cell;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+
+@mixin card {
+    width: 100%;
+}
