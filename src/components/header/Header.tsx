@@ -1,4 +1,4 @@
-import logo from '../images/Gracenote-logo.png';
+import logo from '../../images/Gracenote-logo.png';
 import './Header.scss'
 
 export const Header = () => {

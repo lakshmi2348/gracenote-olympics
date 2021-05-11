@@ -58,7 +58,7 @@ export const WinnersList = (props: any) => {
                 player.map((sport: any) => {
                     return sport.map((item: any) => {
                         return (
-                            <tr className="overview-table" data-testid="winners-list">
+                            <tr className="overview-table" data-testid="winnerslist">
                                 <td className="table-item">{item.athlete}</td>
                                 <td className="table-item">{item.sport}</td>
                                 <td className="table-item">{item.event}</td>

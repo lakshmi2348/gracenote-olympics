@@ -1,4 +1,4 @@
-import logo from '../images/Nld_flag.png'
+import logo from '../../images/Nld_flag.png'
 import './Medalsummary.scss'
 
 export const MedalSummary = (props: any) => {

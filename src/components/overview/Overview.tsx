@@ -1,10 +1,10 @@
-import { MenuItems } from "./MenuItems";
 import './Overview.scss';
 import { Route } from 'react-router-dom';
-import { MedalSummary } from "./MedalSummary";
-import { SportsList } from "./SportsList";
-import { WinnersList } from "./WinnersList";
-import { Title } from "./Title";
+import { MenuItems } from "../menuitems/MenuItems";
+import { MedalSummary } from "../medalsummary/MedalSummary";
+import { SportsList } from "../sportslist/SportsList";
+import { WinnersList } from "../winnerslist/WinnersList";
+import { Title } from "../title/Title";
 
 export const Overview = (props: any) => {
     return (

@@ -1,4 +1,5 @@
 import './SportsList.scss';
+
 export const SportsList = (props: any) => {
     return (
         <table className="card">

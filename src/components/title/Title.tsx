@@ -1,4 +1,4 @@
-import olympicslogo from '../images/logo.png';
+import olympicslogo from '../../images/logo.png';
 
 export const Title = () => {
     return (

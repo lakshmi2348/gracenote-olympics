@@ -1,6 +1,5 @@
-import './App.scss';
-import { Header } from './components/Header';
-import { Overview } from './components/Overview';
+import { Header } from './components/header/Header';
+import { Overview } from './components/overview/Overview';
 import { BrowserRouter as Router } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 
@@ -21,9 +20,9 @@ function App() {
     
   return (
     <Router>
-      <div className='App'>
-        <Header></Header>
-        <Overview medalTable={medalTable}></Overview>
+      <div data-testid='app-medals-data' className='app'>
+        <Header data-testid="header"></Header>
+        <Overview data-test-id="overview" medalTable={medalTable}></Overview>
     </div>
     </Router>
     
